@@ -38,7 +38,7 @@ plot_active_power <- function(data, datetime) {
 }
 
 plot_voltage <- function(data, datetime) {
-    plot(datetime, data$Voltage, type="l", xlab="", ylab="Voltage")
+    plot(datetime, data$Voltage, type="l", xlab="datetime", ylab="Voltage")
 }
 
 plot_metering <- function(data, datetime) {
@@ -50,5 +50,5 @@ plot_metering <- function(data, datetime) {
 }
 
 plot_reactive_power <- function(data, datetime) {
-    plot(datetime, data$Global_reactive_power, type="l", xlab="", ylab="Global Active Power")
+    plot(datetime, data$Global_reactive_power, type="l", xlab="datetime", ylab="Global Active Power")
 }
