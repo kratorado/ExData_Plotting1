@@ -24,7 +24,7 @@ get_date_time <- function(date, time) {
 }
 
 make_plot <- function(x, y) {
-    plot(x, y, type="l", ylab="Global Active Power (kilowatts)")
+    plot(x, y, type="l", ylab="Global Active Power (kilowatts)", xlab=NULL)
     dev.copy(png, file="plot2.png", width=480, height=480)
     dev.off()
 }
